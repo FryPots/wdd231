@@ -130,6 +130,10 @@ section h2 {
     width: 100%;
 }
 
+.course-container {
+    text-align: center;
+}
+
 .socials {
     display: block;
 

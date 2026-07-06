@@ -1,10 +1,10 @@
-myClasses = 
+const myClasses = 
 {
-    CSE: [
+    "CSE": [
         { code: "110", credits: 2},
         { code: "111", credits: 2},
         { code: "210", credits: 2}],
-    WDD: [
+    "WDD": [
         { code: "130", credits: 2},
         { code: "131", credits: 2},
         { code: "231", credits: 2}]
@@ -15,21 +15,22 @@ const cseButton = document.getElementById("filter-cse");
 const wddButton = document.getElementById("filter-wdd");
 const courseContainer = document.querySelector(".course-container");
 
+const courseList = Object.keys(myClasses);
+
 function displayCourses(courses) {
     courseContainer.innerHTML = "";
-    let totalCredits = 0;
-
+    let credits = 0;
     courses.forEach(course => {
         const courseElement = document.createElement("div");
         courseElement.classList.add("course");
-        courseElement.textContent = `Course Code: ${course.code}`;
+        courseElement.textContent = `${course.code}`;
         courseContainer.appendChild(courseElement);
-        totalCredits += course.credits;
+        credits += course.credits;
     });
-
-    const totalCreditsElement = document.createElement("p");
-    totalCreditsElement.textContent = `The total credits for the courses above are: ${totalCredits}`;
-    courseContainer.appendChild(totalCreditsElement);
+    const creditsElement = document.createElement("div");
+    creditsElement.classList.add("credits");
+    creditsElement.textContent = `Total Credits: ${credits}`;
+    courseContainer.appendChild(creditsElement);
 }
 
 allButton.addEventListener("click", () => {
@@ -46,4 +47,5 @@ wddButton.addEventListener("click", () => {
 });
 
 
-displayCourses([...myClasses.CSE, ...myClasses.WDD]);
+const allCourses = [...myClasses.CSE, ...myClasses.WDD];
+displayCourses(allCourses);
