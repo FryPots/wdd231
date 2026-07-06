@@ -139,6 +139,11 @@ section h2 {
 
 .social-icon img {
     width: 5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img:hover{
+    transform: scale(1.5);
 }
 
 footer {

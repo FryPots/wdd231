@@ -9,6 +9,8 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/filter.js" defer></script>
 </head>
 
 <body>
@@ -44,9 +46,9 @@
         <section class="web-courses">
             <h2>Web Certificate Courses</h2>
             <div class="filter-buttons">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
             </div>
             <div class="course-container">
             </div>
@@ -58,7 +60,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> • Gilbertoisai Martinez • Puebla, Mexico <br>
+        <p>&copy;<span id="currentyear"></span> • Gilbertoisai Martinez • Puebla, Mexico <br>
             Last Modification: <span id="lastmodified"></span>
         </p>
     </footer>
