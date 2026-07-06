@@ -12,6 +12,10 @@
     padding: 10px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -131,6 +135,26 @@ section h2 {
 }
 
 .course-container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+
+    justify-content: space-between; 
+    text-align: center;
+}
+
+.course-list li {
+
+    width: 100%;
     text-align: center;
 }
 

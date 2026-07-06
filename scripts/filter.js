@@ -13,39 +13,51 @@ const myClasses =
 const allButton = document.getElementById("filter-all");
 const cseButton = document.getElementById("filter-cse");
 const wddButton = document.getElementById("filter-wdd");
+const courseList = document.querySelector(".course-list");
 const courseContainer = document.querySelector(".course-container");
 
-const courseList = Object.keys(myClasses);
 
 function displayCourses(courses) {
-    courseContainer.innerHTML = "";
     let credits = 0;
-    courses.forEach(course => {
-        const courseElement = document.createElement("div");
-        courseElement.classList.add("course");
-        courseElement.textContent = `${course.code}`;
-        courseContainer.appendChild(courseElement);
-        credits += course.credits;
-    });
-    const creditsElement = document.createElement("div");
-    creditsElement.classList.add("credits");
-    creditsElement.textContent = `Total Credits: ${credits}`;
-    courseContainer.appendChild(creditsElement);
+    courseList.innerHTML = "";
+
+    for (const department in courses) {
+        const courseWrapper = document.createElement("li");
+
+        const courseHeader = document.createElement("h2");
+        courseHeader.textContent = department;
+
+        const subList = document.createElement("ul");
+
+        courseWrapper.appendChild(courseHeader);
+        courseWrapper.appendChild(subList);
+
+        courseList.appendChild(courseWrapper); // <-- Append to the main list
+
+        courses[department].forEach(course => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${department} ${course.code}`;
+            subList.appendChild(listItem);
+            credits += course.credits;
+        });
+    }
+
+    const totalCredits = document.getElementById("total-credits");
+    totalCredits.textContent = `Total Credits: ${credits}`;
+
+    courseContainer.appendChild(totalCredits);
 }
 
+displayCourses(myClasses);
+
 allButton.addEventListener("click", () => {
-    const allCourses = [...myClasses.CSE, ...myClasses.WDD];
-    displayCourses(allCourses);
+    displayCourses(myClasses);
 });
 
 cseButton.addEventListener("click", () => {
-    displayCourses(myClasses.CSE);
+    displayCourses({ "CSE": myClasses.CSE });
 });
 
 wddButton.addEventListener("click", () => {
-    displayCourses(myClasses.WDD);
+    displayCourses({ "WDD": myClasses.WDD });
 });
-
-
-const allCourses = [...myClasses.CSE, ...myClasses.WDD];
-displayCourses(allCourses);
