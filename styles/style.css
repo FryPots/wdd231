@@ -5,30 +5,60 @@
     --clickable-color: #656565;
     --background-color: #D9D9D9;
     --placeholder-color: #AAAAAA;
-
     --special-font: #0066ff;
 
-    --heading-font: 'rubik dirt', sans-serif;
-    --body-font: 'geist pixel', sans-serif;
+    --heading-font: "Rubik Dirt", sans-serif;
+    --body-font: "Geist Pixel", sans-serif;
 }
 
 * {
-    font-family: var(--body-font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--body-font);
+    font-size: 0.5cm;
 }
 
-h1, h2, h3, h4, h5, h6, header * {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header * {
     font-family: var(--heading-font);
     font-weight: normal;
 }
 
+h1 {
+    font-size: 1cm;
+    padding: 0.25em 0.5em;
+}
+
+h2 {
+    font-size: 0.75cm;
+    padding: 0.25em 0.5em;
+    background-color: var(--heading-color);
+    color: var(--dark-font);
+}
+
+header * {
+    font-size: 0.75cm;
+}
+
+ul {
+    list-style: none;
+}
+
 nav {
+    display: flex;
+    flex-direction: column;
     background-color: var(--heading-color);
 }
 
 nav a {
+    width: 100%;
+    padding: 0.25cm 1cm;
     color: var(--dark-font);
     text-decoration: none;
 }
@@ -37,14 +67,19 @@ nav a {
     background-color: var(--clickable-color);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 section {
+    margin: 2.5mm;
     background-color: var(--background-color);
     color: var(--light-font);
 }
 
-h2 {
-    background-color: var(--heading-color);
-    color: var(--dark-font);
+section div {
+    margin: 2.5mm;
 }
 
 button {
@@ -57,11 +92,53 @@ button:hover {
     color: var(--dark-font);
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+.logo {
+    width: 1rem;
+    aspect-ratio: 1 / 1;
+}
+
+.student-photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5mm;
+}
+
+.filter-buttons button {
+    padding: 2.5mm;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 1cm;
+}
+
+.social-icon img {
+    width: 4em;
+    aspect-ratio: 1 / 1;
+}
+
 footer {
     background-color: var(--background-color);
     color: var(--light-font);
+    text-align: center;
+    padding: 5mm;
 }
 
-#total-credits, #currentyear, #lastmodified {
-    color: var(--special-font)
+#total-credits,
+#currentyear,
+#lastmodified {
+    color: var(--special-font);
 }
