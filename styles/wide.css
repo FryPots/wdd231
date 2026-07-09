@@ -1,0 +1,30 @@
+@media screen and (min-width: 800px) {
+    
+    * {
+        font-size: 4mm;
+    }
+    
+    h1 {
+        font-size: 10mm;
+    }
+
+
+    h2, header * {
+        font-size: 5mm;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    h1, .web-courses, .socials {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

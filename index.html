@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gilbertoisai Martinez">
-    <meta name="description" content="This is the home page of my personal website which showcases my web development projects and certificates.">
-    <title>Home</title>
+    <meta name="description"
+        content="This is the home page of my personal website which showcases my web development projects and certificates.">
+    <title>Home Page</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/wide.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/filter.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,22 +34,20 @@
     </header>
     <main>
         <h1>Home</h1>
-        <div class="student-info">
-            <section class ="about-me">
-                <h2>About Me</h2>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus ea numquam ad sunt ipsum
-                        natus
-                        blanditiis corrupti, dolorum id!</p>
-                </div>
-            </section>
-            <section class="student-photo">
-                <h2>Student Photo</h2>
-                <div>
-                    <img src="images/student.png" alt="Student Photo">
-                </div>
-            </section>
-        </div>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto minus ea numquam ad sunt ipsum
+                    natus
+                    blanditiis corrupti, dolorum id!</p>
+            </div>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/student.png" alt="Student Photo">
+            </div>
+        </section>
         <section class="web-courses">
             <h2>Web Certificate Courses</h2>
             <div class="filter-buttons">
@@ -56,11 +61,14 @@
                 <p id="total-credits"></p>
             </div>
         </section>
-        <section class="socials">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://github.com" target="_blank" class="social-icon"><img src="images/github-icon.png" alt="GitHub"></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="images/instagram-icon.png" alt="Instagram"></a>
-        </section>
+        <div class="socials">
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><img src="images/linkedin-icon.png"
+                    alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank" class="social-icon"><img src="images/github-icon.png"
+                    alt="GitHub"></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="images/instagram-icon.png"
+                    alt="Instagram"></a>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> • Gilbertoisai Martinez • Puebla, Mexico <br>

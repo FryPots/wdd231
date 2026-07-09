@@ -1,0 +1,67 @@
+:root {
+    --heading-color: #222222;
+    --light-font: #000000;
+    --dark-font: #ffffff;
+    --clickable-color: #656565;
+    --background-color: #D9D9D9;
+    --placeholder-color: #AAAAAA;
+
+    --special-font: #0066ff;
+
+    --heading-font: 'rubik dirt', sans-serif;
+    --body-font: 'geist pixel', sans-serif;
+}
+
+* {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, header * {
+    font-family: var(--heading-font);
+    font-weight: normal;
+}
+
+nav {
+    background-color: var(--heading-color);
+}
+
+nav a {
+    color: var(--dark-font);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--clickable-color);
+}
+
+section {
+    background-color: var(--background-color);
+    color: var(--light-font);
+}
+
+h2 {
+    background-color: var(--heading-color);
+    color: var(--dark-font);
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--light-font);
+}
+
+button:hover {
+    background-color: var(--clickable-color);
+    color: var(--dark-font);
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--light-font);
+}
+
+#total-credits, #currentyear, #lastmodified {
+    color: var(--special-font)
+}
