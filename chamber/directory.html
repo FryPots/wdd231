@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +26,7 @@
         </div>
         <nav>
             <a href="../">Home</a>
-            <a href="#">Directory</a>
+            <a href="#" class="current">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
@@ -39,16 +42,25 @@
         </div>
     </main>
     <footer>
+        <article class="chamber-info">
+            <h2>Puebla Chamber of Comerce</h2>
+            <p>
+                Av. Reforma 2704 Piso 7 Colonia Amor, Puebla, Pue.<br>
+                contacto@canacopuebla.o.mx<br>
+                (222)-230-3041 43
+            </p>
+        </article>
         <div class="socials-container">
             <a href="https://github.com/" class="socials-icon" target="_blank"><img src="images/github-icon.png" alt="github"></a>
             <a href="https://instagram.com/" class="socials-icon" target="_blank"><img src="images/instagram-icon.png" alt="instagram"></a>
             <a href="https://linkedin.com/" class="socials-icon" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin"></a>
         </div>
-        <div>
+        <div class="proj-author">
             <p>
                 WDD231 Class Project<br>
-                Marie Martínez<br>
-                &copy;2026 Puebla Chamber of Commerce<br>
+                Gilbertoisai Martínez<br>
+                &copy;<span id="currentyear"></span> Puebla Chamber of Commerce<br>
+                Last Modification: <span id="lastmodified"></span>
             </p>
         </div>
     </footer>

@@ -22,8 +22,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-header * {
+h6, header > *{
     font-family: var(--heading-font);
     font-weight: normal;
 }
@@ -34,8 +33,6 @@ h1 {
 
 h2 {
     font-size: 0.75cm;
-    background-color: var(--heading-color);
-    color: var(--dark-font);
 }
 
 header * {
@@ -48,11 +45,13 @@ ul {
 
 nav {
     background-color: var(--heading-color);
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
-    color: var(--dark-font);
     text-decoration: none;
+    color: var(--dark-font);
 }
 
 .current {
@@ -74,7 +73,7 @@ button:hover {
     color: var(--dark-font);
 }
 
-header footer {
+header, footer {
     background-color: var(--background-color);
     color: var(--light-font);
     text-align: center;
@@ -90,8 +89,25 @@ header footer {
     width: 2cm;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#companies-container {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.socials-container {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
