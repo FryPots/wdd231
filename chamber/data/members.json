@@ -1,0 +1,86 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "145 Innovation Blvd, Springfield, IL 62701",
+    "phone": "(217) 555-1023",
+    "website": "https://www.technovasolutions.com",
+    "image": "technova.webp",
+    "membership": 3,
+    "industry": "Information Technology",
+    "description": "Provides cloud computing, cybersecurity, and IT consulting services for businesses.",
+    "email": "info@technovasolutions.com",
+    "founded": 2014
+  },
+  {
+    "name": "Green Leaf Landscaping",
+    "address": "82 Garden Lane, Springfield, IL 62703",
+    "phone": "(217) 555-2147",
+    "website": "https://www.greenleaflandscaping.com",
+    "image": "greenleaf.webp",
+    "membership": 2,
+    "industry": "Landscaping",
+    "description": "Professional residential and commercial landscaping and lawn maintenance.",
+    "email": "contact@greenleaflandscaping.com",
+    "founded": 2010
+  },
+  {
+    "name": "Summit Fitness Center",
+    "address": "300 Oak Street, Springfield, IL 62704",
+    "phone": "(217) 555-3388",
+    "website": "https://www.summitfitness.com",
+    "image": "summitfitness.webp",
+    "membership": 1,
+    "industry": "Health & Fitness",
+    "description": "24/7 gym featuring modern equipment, personal trainers, and group classes.",
+    "email": "hello@summitfitness.com",
+    "founded": 2018
+  },
+  {
+    "name": "Blue Horizon Travel",
+    "address": "55 Main Avenue, Springfield, IL 62702",
+    "phone": "(217) 555-4462",
+    "website": "https://www.bluehorizontravel.com",
+    "image": "bluehorizon.webp",
+    "membership": 3,
+    "industry": "Travel Agency",
+    "description": "Vacation planning, cruises, and international travel packages.",
+    "email": "bookings@bluehorizontravel.com",
+    "founded": 2008
+  },
+  {
+    "name": "Harvest Market",
+    "address": "410 Market Street, Springfield, IL 62707",
+    "phone": "(217) 555-5521",
+    "website": "https://www.harvestmarket.com",
+    "image": "harvestmarket.webp",
+    "membership": 2,
+    "industry": "Grocery",
+    "description": "Local grocery store featuring fresh produce and organic products.",
+    "email": "support@harvestmarket.com",
+    "founded": 2001
+  },
+  {
+    "name": "Precision Auto Repair",
+    "address": "721 Lincoln Drive, Springfield, IL 62711",
+    "phone": "(217) 555-6679",
+    "website": "https://www.precisionautorepair.com",
+    "image": "precisionauto.webp",
+    "membership": 1,
+    "industry": "Automotive",
+    "description": "Certified mechanics specializing in vehicle maintenance and repairs.",
+    "email": "service@precisionautorepair.com",
+    "founded": 2012
+  },
+  {
+    "name": "Bright Future Learning Center",
+    "address": "920 College Road, Springfield, IL 62712",
+    "phone": "(217) 555-7744",
+    "website": "https://www.brightfuturelearning.com",
+    "image": "brightfuture.webp",
+    "membership": 3,
+    "industry": "Education",
+    "description": "Offers tutoring, STEM workshops, and after-school educational programs.",
+    "email": "office@brightfuturelearning.com",
+    "founded": 2016
+  }
+]
