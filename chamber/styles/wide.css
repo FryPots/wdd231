@@ -5,6 +5,7 @@
 
     nav {
         flex-direction: row;
+        text-align: end;
         align-self: flex-end;
         background: transparent;
         gap: 1rem;
