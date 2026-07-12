@@ -1,0 +1,45 @@
+@media screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+        align-self: flex-end;
+        background: transparent;
+        gap: 1rem;
+        padding: 0.5cm;
+    }
+
+    nav a {
+        color: var(--light-font);
+    }
+
+    .current {
+        background: transparent;
+        text-decoration: underline;
+    }
+
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button-container button {
+        padding: 0 1cm;
+    }
+
+    #companies-container {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 1cm;
+    }
+
+    footer > *{
+        flex: 1;
+    }
+}

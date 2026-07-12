@@ -15,6 +15,8 @@
     font-family: var(--body-font);
     font-size: 0.5cm;
     box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
 h1,
@@ -29,6 +31,7 @@ h6, header > *{
 
 h1 {
     font-size: 1cm;
+    text-align: center;
 }
 
 h2 {
@@ -41,6 +44,11 @@ header * {
 
 ul {
     list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -79,6 +87,10 @@ header, footer {
     text-align: center;
 }
 
+main{
+    margin: 0.5cm;
+}
+
 #total-credits,
 #currentyear,
 #lastmodified {
@@ -92,11 +104,39 @@ header, footer {
 .logo-container {
     display: flex;
     align-items: center;
+    padding: 0.5cm;
+    gap: 1cm;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1cm;
+    gap: 2.5mm;
 }
 
 #companies-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5cm;
+}
+
+.business-card {
+    border-radius: 2mm;
+    padding: 0.5cm;
+}
+
+.business-card h2 {
+    border-bottom: var(--heading-color) 2px solid;
+    margin-bottom: 0.5cm;
+}
+
+.business-card img {
+    width: 3cm;
+    float: left;
+    margin-right: 0.5cm;
+    aspect-ratio: 1/1;
 }
 
 footer {
@@ -104,6 +144,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
+    padding: 0.5cm;
 }
 
 .socials-container {

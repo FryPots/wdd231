@@ -32,13 +32,20 @@ const displayCompanies = (companies) => {
 
     image.src = `images/${company.image}`;
     image.alt = `${company.name} logo`;
+
+    image.onerror = () => {
+      image.onerror = null;
+      image.src = "images/wireframe.png";
+    };
     image.loading = "lazy";
 
     addressLabel.textContent = "Address: ";
     address.append(addressLabel, company.address);
+    address.classList.add("company-address");
 
     phoneLabel.textContent = "Phone: ";
     phone.append(phoneLabel, company.phone);
+    phone.classList.add("company-phone")
 
     websiteLabel.textContent = "URL: ";
 
@@ -46,6 +53,7 @@ const displayCompanies = (companies) => {
     website.textContent = company.website;
     website.target = "_blank";
     website.rel = "noopener noreferrer";
+    websiteContainer.classList.add("company-website")
 
     websiteContainer.append(websiteLabel, website);
 
