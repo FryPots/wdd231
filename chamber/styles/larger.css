@@ -16,6 +16,14 @@
         color: var(--light-font);
     }
 
+    #burger-toggle {
+        display: none;
+    }
+    
+    .hidden {
+        display: flex;
+    }
+
     .current {
         background: transparent;
         text-decoration: underline;

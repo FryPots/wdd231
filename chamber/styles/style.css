@@ -51,12 +51,25 @@ ul {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#burger-toggle {
+    align-content: center;
+    font-size: 2cm;
+    cursor:pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 nav {
     background-color: var(--heading-color);
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
 }
