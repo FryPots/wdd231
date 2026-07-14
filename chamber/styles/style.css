@@ -66,12 +66,7 @@ nav a {
     background-color: var(--clickable-color);
 }
 
-section {
-    background-color: var(--background-color);
-    color: var(--light-font);
-}
-
-button {
+section, button, header, footer {
     background-color: var(--background-color);
     color: var(--light-font);
 }
@@ -82,8 +77,6 @@ button:hover {
 }
 
 header, footer {
-    background-color: var(--background-color);
-    color: var(--light-font);
     text-align: center;
 }
 
