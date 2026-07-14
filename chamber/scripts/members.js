@@ -8,6 +8,13 @@ async function init() {
   displayCompanies(companies);
 }
 
+const memberships = 
+{
+  1 : "Member",
+  2 : "Silver",
+  3 : "Gold"
+}
+
 const displayCompanies = (companies) => {
   const companiesContainer = document.querySelector("#companies-container");
 
@@ -16,6 +23,7 @@ const displayCompanies = (companies) => {
     card.classList.add("business-card");
 
     const name = document.createElement("h2");
+    const memberTag = document.createElement("p");
     const image = document.createElement("img");
 
     const address = document.createElement("p");
@@ -29,6 +37,8 @@ const displayCompanies = (companies) => {
     const website = document.createElement("a");
 
     name.textContent = company.name;
+    memberTag.textContent = memberships[company.membership]
+    memberTag.classList.add("member-tag");
 
     image.src = `images/${company.image}`;
     image.alt = `${company.name} logo`;
@@ -41,11 +51,11 @@ const displayCompanies = (companies) => {
 
     addressLabel.textContent = "Address: ";
     address.append(addressLabel, company.address);
-    address.classList.add("company-address");
+    address.classList.add("information", "company-address");
 
     phoneLabel.textContent = "Phone: ";
     phone.append(phoneLabel, company.phone);
-    phone.classList.add("company-phone")
+    phone.classList.add("information", "company-phone")
 
     websiteLabel.textContent = "URL: ";
 
@@ -53,11 +63,11 @@ const displayCompanies = (companies) => {
     website.textContent = company.website;
     website.target = "_blank";
     website.rel = "noopener noreferrer";
-    websiteContainer.classList.add("company-website")
+    websiteContainer.classList.add("information", "websiteURL")
 
     websiteContainer.append(websiteLabel, website);
 
-    card.append(name, image, address, phone, websiteContainer);
+    card.append(name, memberTag, image, address, phone, websiteContainer);
 
     companiesContainer.appendChild(card);
   });

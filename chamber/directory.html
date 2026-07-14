@@ -10,7 +10,7 @@
     <link rel="icon" href="coat_of_arms.webp">
 
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/wide.css">
+    <link rel="stylesheet" href="styles/larger.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/buttons.js" defer></script>
 
     <meta property="og:url" content="https://frypots.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
@@ -42,10 +43,10 @@
     <main>  
         <h1>Directory</h1>
         <div class="button-container">
-            <button id="grid-button">Grid</button>
+            <button id="grid-button" class="selected-button">Grid</button>
             <button id="list-button">List</button>
         </div>
-        <div id="companies-container">
+        <div id="companies-container" class="grid-view">
             
         </div>
     </main>
