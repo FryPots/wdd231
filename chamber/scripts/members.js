@@ -40,6 +40,7 @@ const displayCompanies = (companies) => {
     memberTag.textContent = memberships[company.membership]
     memberTag.classList.add("member-tag");
 
+    image.loading = "lazy";
     image.src = `images/${company.image}`;
     image.alt = `${company.name} logo`;
 
@@ -47,7 +48,6 @@ const displayCompanies = (companies) => {
       image.onerror = null;
       image.src = "images/wireframe.png";
     };
-    image.loading = "lazy";
 
     addressLabel.textContent = "Address: ";
     address.append(addressLabel, company.address);
