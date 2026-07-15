@@ -1,0 +1,48 @@
+.grid-view {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5cm;
+}
+
+.grid-view .business-card {
+    border-radius: 2mm;
+    padding: 0.5cm;
+}
+
+.grid-view  .business-card .member-tag {
+    border-bottom: var(--heading-color) 2px solid;
+    margin-bottom: 0.5cm;
+    text-align: center;
+}
+
+.grid-view .business-card img {
+    width: 3cm;
+    float: left;
+    margin-right: 0.5cm;
+    aspect-ratio: 1/1;
+}
+
+
+.list-view {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+}
+
+.list-view .business-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5cm;
+    border-bottom: var(--heading-color) 2px solid;
+}
+
+.list-view .business-card img {
+    display: none;
+}
+
+.list-view .information, .list-view .member-tag {
+    display: none;
+}
+
+.list-view .company-address {
+    display: inline;
+}
