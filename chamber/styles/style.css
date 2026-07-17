@@ -12,15 +12,14 @@
 }
 
 * {
-    font-family: var(--body-font);
-    font-size: 0.5cm;
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    margin: 0;
+    padding: 0;
+    font: 0.5cm var(--body-font);
 }
 
-a{
-    color: var(--special-font)
+a {
+    color: var(--special-font);
 }
 
 h1,
@@ -28,7 +27,8 @@ h2,
 h3,
 h4,
 h5,
-h6, header > *{
+h6,
+header > * {
     font-family: var(--heading-font);
     font-weight: normal;
 }
@@ -38,10 +38,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 0.75cm;
-}
-
+h2,
 header * {
     font-size: 0.75cm;
 }
@@ -59,7 +56,7 @@ header {
 #burger-toggle {
     align-content: center;
     font-size: 2cm;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .hidden {
@@ -67,37 +64,43 @@ header {
 }
 
 nav {
-    background-color: var(--heading-color);
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
     display: flex;
     flex-direction: column;
+    background-color: var(--heading-color);
 }
 
 nav a {
-    text-decoration: none;
     color: var(--dark-font);
+    text-decoration: none;
 }
 
-.current {
-    background-color: var(--clickable-color);
-}
-
-section, button, header, footer {
+section,
+button,
+header,
+footer {
     background-color: var(--background-color);
     color: var(--light-font);
 }
 
-button:hover, .selected-button {
+.current,
+button:hover,
+.selected-button {
     background-color: var(--clickable-color);
+}
+
+button:hover,
+.selected-button,
+.current {
     color: var(--dark-font);
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
 }
 
-main{
+main {
     margin: 0.5cm;
 }
 
@@ -107,22 +110,28 @@ main{
     color: var(--special-font);
 }
 
-.logo, .socials-icon img{
+.logo,
+.socials-icon img {
     width: 2cm;
 }
 
-.logo-container {
+.logo-container,
+.button-container,
+footer,
+.socials-container {
     display: flex;
+}
+
+.logo-container {
     align-items: center;
-    padding: 0.5cm;
     gap: 1cm;
+    padding: 0.5cm;
 }
 
 .button-container {
-    display: flex;
     flex-direction: column;
-    margin: 1cm;
     gap: 2.5mm;
+    margin: 1cm;
 }
 
 .companies-container {
@@ -130,47 +139,43 @@ main{
 }
 
 .grid-view {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
     gap: 0.5cm;
 }
 
-.grid-view .business-card {
-    border-radius: 2mm;
+.business-card {
     padding: 0.5cm;
+    border-radius: 2mm;
 }
 
-.grid-view  .business-card .member-tag {
-    border-bottom: var(--heading-color) 2px solid;
+.grid-view .member-tag {
     margin-bottom: 0.5cm;
     text-align: center;
+    border-bottom: 2px solid var(--heading-color);
 }
 
-.grid-view .business-card img {
+.grid-view img {
     width: 3cm;
-    float: left;
     margin-right: 0.5cm;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1;
 }
-
 
 .list-view {
-    grid-template-rows: 1fr;
     grid-template-columns: auto;
+    grid-template-rows: 1fr;
 }
 
 .list-view .business-card {
     display: flex;
     justify-content: space-between;
     padding: 0.5cm;
-    border-bottom: var(--heading-color) 2px solid;
+    border-bottom: 2px solid var(--heading-color);
 }
 
-.list-view .business-card img {
-    display: none;
-}
-
-.list-view .information, .list-view .member-tag {
+.list-view img,
+.list-view .information,
+.list-view .member-tag {
     display: none;
 }
 
@@ -179,7 +184,6 @@ main{
 }
 
 footer {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
@@ -187,7 +191,6 @@ footer {
 }
 
 .socials-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }

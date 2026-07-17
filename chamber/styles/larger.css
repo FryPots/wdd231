@@ -1,25 +1,22 @@
 @media (min-width: 800px) {
-    header {
-        flex-direction: row;
-    }
-
     nav {
         flex-direction: row;
-        text-align: end;
         align-self: flex-end;
-        background: transparent;
+        text-align: end;
         gap: 1rem;
         padding: 0.5cm;
+        background: transparent;
     }
 
-    nav a {
+    nav a,
+    .current {
         color: var(--light-font);
     }
 
     #burger-toggle {
         display: none;
     }
-    
+
     .hidden {
         display: flex;
     }
@@ -35,11 +32,10 @@
     }
 
     .button-container button {
-        padding: 0 1cm;
+        padding-inline: 1cm;
     }
 
     .grid-view {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-content: center;
     }
@@ -49,7 +45,7 @@
         gap: 1cm;
     }
 
-    footer > *{
+    footer > * {
         flex: 1;
     }
 }
