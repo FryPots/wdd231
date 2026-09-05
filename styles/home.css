@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 0px  0px 10px;
+    gap: 10px;
+}
+
+nav {
+    background-color: var(--primary);
+    color: var(--surface);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--surface);
+}
+
+.socials ul, .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
