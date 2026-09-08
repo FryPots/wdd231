@@ -6,9 +6,12 @@
     <title>Home Page</title>
     <meta name="description" content="This is a sample HTML document.">
     <meta name="author" content="Gilbertoisai Martinez Serafin">
-
+    
+    <script src="scripts/footer.js" defer></script>
+    
     <link rel="stylesheet" href="styles/template.css">
     <link rel="stylesheet" href="styles/home.css">
+
 </head>
 <body>
     <header>
@@ -28,15 +31,20 @@
         <h1 class="full-width">Home</h1>
         <section class="section-container">
             <h2>About Me</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam reprehenderit illo, culpa ut expedita distinctio. Eum tempora alias atque voluptas blanditiis laborum dicta necessitatibus maiores, nostrum laboriosam voluptatibus ut esse quo illo iure minima odio quis omnis odit vitae. Nihil quibusdam distinctio, officia excepturi ex, repellendus qui, voluptatum aperiam non hic aliquam? Eius possimus sit cupiditate alias illum magni!
-            </p>
+            <div class="section-content">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam reprehenderit illo, culpa ut expedita distinctio. Eum tempora alias atque voluptas blanditiis laborum dicta necessitatibus maiores, nostrum laboriosam voluptatibus ut esse quo illo iure minima odio quis omnis odit vitae. Nihil quibusdam distinctio, officia excepturi ex, repellendus qui, voluptatum aperiam non hic aliquam? Eius possimus sit cupiditate alias illum magni!
+                </p>
+            </div>
         </section>
-        <section class="section-container">
+        <section class="section-container my-picture">
             <h2>Student Photo</h2>
-            <img src="images/gilbertoisai.png" alt="Gilbertoisai Martinez">
+            <div class="section-content">
+                <img src="images/gilbertoisai.png" alt="Gilbertoisai Martinez">
+                <p class="image-caption">Gilbertoisai Martinez Serafin</p>
+            </div>
         </section>
         
-        <section class="full-width">
+        <section class="full-width certificates">
             <h2>Web Certificate Courses</h2>
             <ul class="filter-buttons">
                 <li><button>All</button></li>
