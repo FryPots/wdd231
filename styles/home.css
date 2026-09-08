@@ -17,14 +17,20 @@ main {
 nav {
     background-color: var(--primary);
     color: var(--surface);
-    padding: 10px;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+}
+
+nav li {
+    padding: 10px;
+}
+
+.active {
+    background-color: var(--placeholder);
 }
 
 nav a {
