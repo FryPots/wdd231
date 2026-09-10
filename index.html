@@ -6,12 +6,19 @@
     <title>Home Page</title>
     <meta name="description" content="This is a sample HTML document.">
     <meta name="author" content="Gilbertoisai Martinez Serafin">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Love+Ya+Like+A+Sister&family=Rubik+Dirt&display=swap" rel="stylesheet">
+            
     <script src="scripts/footer.js" defer></script>
 
     <link rel="stylesheet" href="styles/template.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/small.css">
+
+    <script src="burger.js" defer></script>
+    <script src="scripts/filter.js" defer></script>
 
 </head>
 <body>
@@ -48,19 +55,20 @@
         <section class="full-width certificates">
             <h2>Web Certificate Courses</h2>
             <ul class="filter-buttons">
-                <li><button>All</button></li>
-                <li><button>CSE</button></li>
-                <li><button>WDD</button></li>
+                <li><button id="all-button">All</button></li>
+                <li><button id="cse-button">CSE</button></li>
+                <li><button id="wdd-button">WDD</button></li>
             </ul>
             <div class="courses-container">
             </div>
-            <p></p>
+            <p class="courses-credits"></p>
         </section>
         <section class="socials full-width">
+            <h2>Social Media</h2>
             <ul>
-                <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn" class="icon"></a></li>
-                <li><a href="https://www.github.com/"><img src="images/github.png" alt="GitHub" class="icon"></a></li>
-                <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" class="icon"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="icon"></a></li>
+                <li><a href="https://www.github.com/" target="_blank"><img src="images/github.png" alt="GitHub" class="icon"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook" class="icon"></a></li>
             </ul>
         </section>
     </main>

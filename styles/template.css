@@ -1,7 +1,7 @@
 :root {
     --background: #FFFFFF;
     --surface: #D9D9D9;
-    --placeholder: #6c6c6c;
+    --placeholder: #464646;
     --primary: #222222;
     --secondary: #BBBBBB;
     --text: #222222;
@@ -12,6 +12,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: 'JetBrains Mono', monospace;
+}
+
+nav *, h1 {
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+footer, footer span,.image-caption {
+    font-family: 'Cutive Mono', monospace;
 }
 
 ul {
@@ -22,6 +37,10 @@ header {
     margin: 10px;
 }
 
+.active {
+    background-color: var(--placeholder);
+}
+
 a {
     text-decoration: none;
 }
@@ -30,18 +49,26 @@ img {
     background-color: var(--placeholder);
 }
 
+section > *{
+    padding: 10px;
+}
+
 .section-container {
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
     overflow: hidden;
-}
+    }
 
 .section-container h2 {
     background-color: var(--primary);
     color: var(--surface);
-    padding: 10px;
     text-align: center;
+}
+
+h2 {
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
 }
 
 .section-content {
@@ -54,6 +81,8 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    
+    border-radius: 5px;
 }
 
 .icon {
