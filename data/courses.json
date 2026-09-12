@@ -1,0 +1,19 @@
+{
+    "courses": [
+        { 
+            "code": 110, 
+            "class": "CSE"},
+        { 
+            "code": 111, 
+            "class": "CSE"},
+        {
+            "code": 210, 
+            "class": "CSE"},
+        { 
+            "code": 130, 
+            "class": "WDD"},
+        { 
+            "code": 131, 
+            "class": "WDD"}
+    ]
+}

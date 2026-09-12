@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Home Page</title>
-    <meta name="description" content="This is a sample HTML document.">
+    <link rel="icon" href="images/placeholder.png">
+
     <meta name="author" content="Gilbertoisai Martinez Serafin">
+    <meta name="description" content="This is a sample HTML document.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +16,10 @@
             
     <script src="scripts/footer.js" defer></script>
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/template.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/wide.css">
 
     <script src="burger.js" defer></script>
     <script src="scripts/filter.js" defer></script>
@@ -23,20 +27,20 @@
 </head>
 <body>
     <header>
-            <div class="title-logo full-width">
-                <img src="images/placeholder.png" alt="Logo" class="icon">
-                <p>Gilberto's Untitled Website</p>
-            </div>
+        <div class="title-logo full-width">
+            <img src="images/placeholder.png" alt="Logo" class="icon">
+            <p>Gilberto's Untitled Website</p>
+        </div>
         <nav>
             <ul>
-                <li class="active"><a href="#home">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 <li><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="full-width">Home</h1>
+        <h1>Home</h1>
         <section class="section-container about-me">
             <h2>About Me</h2>
             <div class="section-content">
@@ -52,7 +56,7 @@
             </div>
         </section>
         
-        <section class="full-width certificates">
+        <section class="certificates">
             <h2>Web Certificate Courses</h2>
             <ul class="filter-buttons">
                 <li><button id="all-button">All</button></li>
@@ -63,7 +67,7 @@
             </div>
             <p class="courses-credits"></p>
         </section>
-        <section class="socials full-width">
+        <section class="socials">
             <h2>Social Media</h2>
             <ul>
                 <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="icon"></a></li>

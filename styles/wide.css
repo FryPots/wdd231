@@ -1,0 +1,35 @@
+@media only screen and (min-width:550px) {
+
+    header, nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        align-items: baseline;
+    }
+
+    nav li, .active {
+        background: transparent;
+        border: none;
+    }
+
+    nav a {
+        color: var(--text);
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    header {
+        border-bottom: 1px solid var(--border);
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    h1, .certificates, .socials {
+        grid-column: 1 / 3;
+    }
+}

@@ -8,102 +8,98 @@
     --border: #000000;
 }
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
+    
+    list-style: none;
+    text-decoration: none;
     font-family: 'JetBrains Mono', monospace;
 }
 
-nav *, h1 {
-    font-family: 'Rubik Dirt', cursive;
-    font-weight: normal;
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: 'Love Ya Like A Sister', cursive;
-}
-
-footer, footer span,.image-caption {
-    font-family: 'Cutive Mono', monospace;
-}
-
-ul {
-    list-style: none;
-}
-
 header {
-    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav li {
+    background-color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+nav a {
+    display: block;
+    padding: 10px 0;
+    color: var(--background);
 }
 
 .active {
     background-color: var(--placeholder);
 }
 
-a {
-    text-decoration: none;
+main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    margin: 20px;
 }
 
-img {
-    background-color: var(--placeholder);
-}
-
-section > *{
-    padding: 10px;
+h1 {
+    margin: 0;
 }
 
 .section-container {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
     overflow: hidden;
-    }
+    border-radius: 2px;
+    background: var(--surface);
+}
 
-.section-container h2 {
-    background-color: var(--primary);
-    color: var(--surface);
-    text-align: center;
+.section-container > * {
+    padding: 10px;
 }
 
 h2 {
-    padding: 10px;
-    border-bottom: 1px solid var(--border);
+    background: var(--primary);
+    color: var(--background);
+    text-align: center;
 }
 
-.section-content {
-    padding: 15px;
-    text-align: justify;
-}
-
-.section-content img {
-    width: 100%;
+.section-container img {
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-    
-    border-radius: 5px;
-}
-
-.icon {
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
 }
 
 .image-caption {
     text-align: center;
-    margin-top: 5px;
     font-style: italic;
-}
-
-.full-width {
-    width: 100%;
-    grid-column: 1 / -1;
+    padding-top: 10px;
 }
 
 footer {
-    background-color: var(--surface);
-    padding: 10px;
     text-align: center;
+    background: var(--surface);
+    padding: 10px;
 }
