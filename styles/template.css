@@ -29,6 +29,7 @@ header {
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: row;
 }
 
 .icon {
@@ -36,10 +37,27 @@ header {
     height: 70px;
 }
 
-nav ul {
+#burger-button {
+    margin-left: auto;
+    font-size: 50px;
+}
+
+#burger-button::before {
+    content: "×";
+}
+
+#burger-button.burger-active::before {
+    content: "≡";
+}
+
+#nav-list {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+#nav-list.burger-active {
+    display: none;
 }
 
 nav li {

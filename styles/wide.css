@@ -1,6 +1,7 @@
 @media only screen and (min-width:680px) {
 
-    header, nav ul {
+    header, #nav-list, #nav-list.burger-active {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
@@ -36,5 +37,10 @@
     .courses-container {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px
+    }
+
+    #burger-button{
+        display: none;
+        
     }
 }

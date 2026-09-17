@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Love+Ya+Like+A+Sister&family=Rubik+Dirt&display=swap" rel="stylesheet">
             
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/burger.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/template.css">
@@ -26,12 +27,13 @@
 </head>
 <body>
     <header>
-        <div class="title-logo full-width">
+        <div class="title-logo">
             <img src="images/placeholder.png" alt="Logo" class="icon">
             <p>Gilberto's Untitled Website</p>
+            <button class="icon" id="burger-button"></button>
         </div>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
