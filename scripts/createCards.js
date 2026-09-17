@@ -1,6 +1,6 @@
 const fetchCourses = async () => {
     try {
-        const response = await fetch("data\courses.json");
+        const response = await fetch("data/courses.json");
         const data = await response.json();
 
         return data.courses;
