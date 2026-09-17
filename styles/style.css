@@ -14,3 +14,20 @@
     width: 100%;
     padding: 5px;
 }
+
+
+.courses-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.WDD {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.CSE {
+    border: 1px solid var(--border);
+}

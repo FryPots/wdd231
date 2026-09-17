@@ -1,4 +1,4 @@
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:680px) {
 
     header, nav ul {
         flex-direction: row;
@@ -31,5 +31,10 @@
 
     h1, .certificates, .socials {
         grid-column: 1 / 3;
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px
     }
 }
