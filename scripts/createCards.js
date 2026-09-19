@@ -47,7 +47,6 @@ document.getElementById("all-button").addEventListener("click", () => {
     createCards();
 });
 
-
 document.getElementById("cse-button").addEventListener("click", () => {
     createCards("CSE");
 });

@@ -6,6 +6,9 @@
     --secondary: #BBBBBB;
     --text: #222222;
     --border: #000000;
+
+    --gold: #ffd16d;
+    --silver: #95e0e1;
 }
 
 * {
@@ -73,6 +76,7 @@ nav a {
 
 .active {
     background-color: var(--placeholder);
+    color: var(--background);
 }
 
 main {
@@ -84,11 +88,30 @@ main {
     margin: 20px;
 }
 
+.hero-container {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
 h1 {
     margin: 0;
 }
 
-.section-container {
+.section-container{
     overflow: hidden;
     border-radius: 2px;
     background: var(--surface);
@@ -98,7 +121,26 @@ h1 {
     padding: 10px;
 }
 
-h2 {
+.button-bar {
+    border: 1px var(--border) dotted;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.button-bar li, .button-bar button {
+    width: 100%;
+}
+
+.button-bar button {
+    padding: 10px;
+    background-color: inherit;
+    color: inherit;
+}
+
+section h2 {
     background: var(--primary);
     color: var(--background);
     text-align: center;
@@ -114,6 +156,41 @@ h2 {
     text-align: center;
     font-style: italic;
     padding-top: 10px;
+}
+
+.gold {
+    background-color: var(--gold);
+}
+
+.silver {
+    background-color: var(--silver);
+}
+
+.member {
+    background-color: var(--surface);
+}
+
+.members-list{
+    position: relative;
+    display: grid;
+}
+
+.members-list h2, .members-list img {
+    justify-self: center;
+}
+
+.members-list article {
+    border: var(--border) 1px dotted;
+    padding: 10px;
+}
+
+.members-list.list-view article > * {
+    display: none;
+}
+
+.members-list.list-view article > h2 {
+    display: block;
+    justify-self: left;
 }
 
 footer {

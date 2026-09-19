@@ -1,34 +1,13 @@
 @media only screen and (min-width:680px) {
-
-    header, #nav-list, #nav-list.burger-active {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-
-        align-items: baseline;
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #burger-button{
-        display: none;
-        
+    .full-width {
+        grid-column: 1 / 4;
     }
 
-    nav li, .active {
-        background: transparent;
-        border: none;
+    .hero-container {
+        height: 300px;
     }
-
-    nav a {
-        color: var(--text);
-    }
-
-    .active {
-        text-decoration: underline;
-    }
-
-    header {
-        border-bottom: 1px solid var(--border);
-    }
-
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Home Page</title>
-    <link rel="icon" href="images/coatArms.webp">
+    <title>Directory</title>
+    <link rel="icon" href="images/favicon.png">
 
     <meta name="author" content="Gilbertoisai Martinez Serafin">
     <meta name="description" content="State of Puebla Chamber of Commerce's website.">
@@ -19,14 +19,17 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/template.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/wide.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/wide-template.css">
+    <link rel="stylesheet" href="styles/wide-directory.css">
+
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="title-logo">
-            <img src="images/coatArms.webp" alt="Logo" class="icon">
+            <img src="images/coat_of_arms.webp" alt="Logo" class="icon">
             <p>Puebla Chamber of Commerce</p>
             <button class="icon" id="burger-button"></button>
         </div>
@@ -39,12 +42,20 @@
             </ul>
         </nav>
     </header>
-    <main>        
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+    <main>
+        <h1>Chamber of Commerce Directory</h1>
+        <section class="section-container">
+            <h2>Our Members:</h2>
+            <ul class="button-bar">
+                <li><button id="grid-button">Grid</button></li>
+                <li><button id="list-button">List</button></li>
+            </ul>
+        </section>
+
+        <div class="members-container" class="section-container">
+            <ul class="members-list">
+            </ul>
+        </div>
     </main>
     <footer>
         <p> &copy; <span id="currentyear"></span> Gilbertoisai Martinez Serafin. All rights reserved.</p>

@@ -1,0 +1,15 @@
+@media only screen and (min-width:680px) {
+    main {
+        
+        width: 100%;
+        padding: 50px 100px;
+    }
+    .members-list{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .members-list.list-view {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

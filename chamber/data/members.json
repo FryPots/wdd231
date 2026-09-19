@@ -1,0 +1,104 @@
+{
+  "companies": [
+    {
+      "name": "Volkswagen de México",
+      "address": "Carretera México-Puebla Km. 116, Cuautlancingo, Puebla, C.P. 72700",
+      "phone": "(222) 303-5969",
+      "website": "https://www.vw.com.mx/",
+      "image": "volkswagen.webp",
+      "membership": 3,
+      "industry": "Automotive manufacturing",
+      "description": "Automotive manufacturer operating one of its major production facilities in Puebla."
+    },
+    {
+      "name": "BASF Puebla",
+      "address": "Carretera a Fábricas 5000, San Jerónimo Caleras, Puebla, Pue., C.P. 72100",
+      "phone": "(222) 223-2300",
+      "website": "https://www.basf.com/mx/",
+      "image": "basf.webp",
+      "membership": 3,
+      "industry": "Chemical manufacturing",
+      "description": "Chemical company with a production facility in Puebla."
+    },
+    {
+      "name": "Grupo Industrial La Italiana",
+      "address": "Prolongación 27 Norte 7468-7803, Santa María la Rivera, Puebla, Pue., C.P. 72010",
+      "phone": "(222) 232-0200",
+      "website": "https://www.laitaliana.com.mx/",
+      "image": "la-italiana.webp",
+      "membership": 3,
+      "industry": "Food manufacturing",
+      "description": "Puebla-based company involved in food production and supply."
+    },
+    {
+      "name": "Brose Puebla",
+      "address": "Parque Industrial Empresarial, Camino a San Lorenzo 1214, Sanctorum, Puebla, C.P. 72730",
+      "phone": "(222) 229-1311",
+      "website": "https://www.brose.com/",
+      "image": "brose.webp",
+      "membership": 2,
+      "industry": "Automotive manufacturing",
+      "description": "Automotive supplier manufacturing components and systems for the automotive industry."
+    },
+    {
+      "name": "OPmobility Puebla",
+      "address": "Av. Mexicali 1187, Zona Industrial Anexo a la Loma, Puebla, Pue., C.P. 72019",
+      "phone": "(222) 223-8000",
+      "website": "https://www.opmobility.com/",
+      "image": "opmobility.webp",
+      "membership": 2,
+      "industry": "Automotive manufacturing",
+      "description": "Manufacturer of automotive components and mobility solutions."
+    },
+    {
+      "name": "Industrias TUK",
+      "address": "Calle 3 Sur 5760-1, El Cerrito, Puebla, Pue., C.P. 72440",
+      "phone": "(222) 237-2588",
+      "website": "https://www.tuk.com.mx/",
+      "image": "industrias-tuk.webp",
+      "membership": 2,
+      "industry": "Manufacturing",
+      "description": "Industrial manufacturer operating a facility in Puebla."
+    },
+    {
+      "name": "Autotek",
+      "address": "Calle F 50, Parque Industrial Puebla 2000, Puebla, Pue., C.P. 72226",
+      "phone": "(222) 223-2700",
+      "website": "https://www.autotek.com/",
+      "image": "autotek.webp",
+      "membership": 2,
+      "industry": "Automotive manufacturing",
+      "description": "Automotive manufacturing company operating in the Puebla 2000 industrial park."
+    },
+    {
+      "name": "Estrella Roja",
+      "address": "Av. Las Torres 1923, Col. Reserva Territorial Atlixcáyotl, Puebla, Pue., C.P. 72450",
+      "phone": "55 3433 4334",
+      "website": "https://www.estrellaroja.com.mx/",
+      "image": "estrella-roja.webp",
+      "membership": 3,
+      "industry": "Transportation",
+      "description": "Passenger transportation company serving Puebla and other destinations."
+    },
+    {
+      "name": "Iron Mountain México",
+      "address": "Prolongación de la 27 Norte, San Pablo del Monte 10252, El Conde, Puebla, Pue., C.P. 72230",
+      "phone": "800 899 4766",
+      "website": "https://www.ironmountain.com.mx/",
+      "image": "iron-mountain.webp",
+      "membership": 1,
+      "industry": "Information management",
+      "description": "Company providing information management and storage services."
+    },
+    {
+      "name": "Clear Channel Puebla",
+      "address": "Calle 17 Sur 3104, Los Volcanes, Puebla, Pue., C.P. 72410",
+      "phone": "(222) 211-2765",
+      "website": "https://www.clearchanneloutdoor.com/",
+      "image": "clear-channel.webp",
+      "membership": 1,
+      "industry": "Advertising",
+      "description": "Advertising company providing outdoor media services in Puebla."
+    }
+  ]
+}
