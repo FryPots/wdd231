@@ -1,13 +1,14 @@
 @media only screen and (min-width:680px) {
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .full-width {
-        grid-column: 1 / 4;
+        grid-column: 1 / -1;
     }
 
     .hero-container {
-        height: 300px;
+        height: 500px;
     }
+
 }
