@@ -24,7 +24,7 @@ function createCard(container, weather, classList = "") {
 }
 
 createCard(container, currentWeather);
-appendText(data.list[0].main.temp);
+appendText(`${data.list[0].main.temp} C°`);
 
 for (let i = 1; i < 4; i++) {
     const wrapper = document.createElement("li");
