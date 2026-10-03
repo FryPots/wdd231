@@ -1,0 +1,19 @@
+@media only screen and (min-width:680px) {
+    div.join-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1{
+        grid-column: 1 / -1;
+    }
+
+    .hero-container {
+        height: 500px;
+    }
+
+    section p {
+        font-size: 40px;
+        text-align: center;
+    }
+
+}

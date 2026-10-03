@@ -18,3 +18,23 @@ h1 {
 input {
     padding: 5px;
 }
+
+h2, button {
+    padding: 10px;
+    width: 100%;
+}
+article {
+    border: 1px solid var(--border);
+}
+
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.membership-section p {
+    font-size: 20px;
+    padding: 10px;
+}
