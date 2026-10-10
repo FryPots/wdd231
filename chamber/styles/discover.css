@@ -1,8 +1,32 @@
+article{
+    background: var(--primary);
+    color: var(--background);
+}
+
+article figure {
+    padding: 10px 0px;
+}
+
+article p, article address {
+    padding: 0 20px;
+}
+
+article button {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary);
+    color: var(--background);
+}
+
+article button:hover {
+    background: var(--placeholder);
+}
+
+
 #attractions figure,
 .dialog-content figure {
     display: flex;
     justify-content: center;
-    background: var(--secondary);
 }
 
 #attraction-dialog[open] {
@@ -17,10 +41,6 @@
     border-radius: 2px;
     background: var(--surface);
     color: var(--text);
-}
-
-#attraction-dialog::backdrop {
-    background: rgb(0 0 0 / 60%);
 }
 
 .dialog-content {

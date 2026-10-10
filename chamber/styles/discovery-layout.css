@@ -22,23 +22,38 @@
 #attractions .area-7 { grid-area: g; }
 #attractions .area-8 { grid-area: h; }
 
-.attraction-card {
-    height: 300px;
-}
-
 .attraction-card img {
     opacity: 1;
 }
 
 @media only screen and (min-width: 680px) {
     #attractions {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "a b"
-            "c b"
             "c d"
             "e f"
-            "g f"
             "g h";
     }
+}
+
+.attraction-card {
+    height: 100%;
+    min-width: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+    #attractions {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a b c"
+            "d d d"
+            "e f g"
+            "h h h";
+    }
+}
+
+.attraction-card {
+    height: 100%;
+    min-width: 0;
 }
