@@ -1,3 +1,9 @@
+
+.attraction-card {
+    height: 100%;
+    min-width: 0;
+}
+
 #attractions {
     display: grid;
     grid-template-columns: 1fr;
@@ -37,11 +43,6 @@
     }
 }
 
-.attraction-card {
-    height: 100%;
-    min-width: 0;
-}
-
 @media only screen and (min-width: 1400px) {
     #attractions {
         grid-template-columns: repeat(3, 1fr);
@@ -51,9 +52,4 @@
             "e f g"
             "h h h";
     }
-}
-
-.attraction-card {
-    height: 100%;
-    min-width: 0;
 }
