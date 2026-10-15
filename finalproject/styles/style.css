@@ -1,5 +1,5 @@
 :root {
-    /* COLORS */
+
     --primary-color: #E30B5A;
     --secondary-color: #292828;
     --void-color: #959595;
@@ -7,13 +7,11 @@
     --foreground-color: #FFFFFF;
     --border-color: #292828;
 
-    /* FONTS */
     --title-font: 'Rubik Mono One', sans-serif;
     --subtitle-font: 'Darumadrop One', Helvetica, sans-serif;
     --default-font: 'DotGothic16', Arial, Helvetica, sans-serif;
     --legal-font: 'Source Code Pro', monospace;
 
-    /* SPACING */
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --border-width: 2px;
@@ -24,7 +22,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+ul,
+ol {
     list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* FORM CONTROLS */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0;
 }
 
 /* GENERAL */
@@ -36,12 +53,14 @@ body {
 }
 
 @keyframes body-bg-scroll {
-    from {
-        background-position: 0 0;
-    }
     to {
         background-position: 40px 40px;
     }
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 h1,
@@ -63,8 +82,7 @@ code {
 
 /* HEADER AND FOOTER */
 header,
-footer,
-.title-logo {
+footer {
     color: var(--foreground-color);
     background-color: var(--secondary-color);
 }
@@ -86,16 +104,18 @@ footer {
     align-items: center;
     gap: var(--spacing-medium);
     padding: var(--spacing-medium);
+    color: var(--foreground-color);
+    background-color: var(--secondary-color);
     border-bottom: var(--border-width) solid var(--primary-color);
 }
 
-/* ICONS */
 .icon {
     width: 50px;
     height: 50px;
+    object-fit: contain;
 }
 
-/* DROPDOWN */
+/* DROPDOWN*/
 .dropout {
     display: flex;
     flex-direction: column;
@@ -117,8 +137,8 @@ footer {
 }
 
 .dd-indicator {
-    position: relative;
     display: inline-block;
+    position: relative;
     transition: rotate 0.1s;
 }
 
@@ -139,40 +159,41 @@ footer {
     display: none;
 }
 
-.dd-list a, nav ul:hover li a{
+/* NAVIGATION LINKS */
+.dd-list a,
+nav ul:hover li a {
     display: block;
     padding: var(--spacing-small);
     color: var(--secondary-color);
     background-color: var(--background-color);
     border: var(--border-width) var(--primary-color);
     border-style: none dotted solid solid;
-    text-decoration: none;
 }
 
-.dd-list a:hover, nav li.active a{
-    background-color: var(--primary-color);
+.dd-list a:hover,
+nav li.active a {
     color: var(--background-color);
+    background-color: var(--primary-color);
 }
 
-.dd-list a:hover::before, nav li.active a::before{
+.dd-list a:hover::before,
+nav li.active a::before {
     content: "➤ ";
 }
 
-nav ul:hover a::before{
+nav ul:hover a::before {
     content: "";
 }
 
-
-/* MAIN */
+/*  MAIN CONTENT */
 main {
     width: 100%;
     max-width: 1200px;
-    padding: var(--spacing-medium);
-    border: var(--border-width) var(--primary-color);
-
-    border-style: none dotted solid ;
-    background-color: var(--background-color);
     justify-self: center;
+    padding: var(--spacing-medium);
+    background-color: var(--background-color);
+    border: var(--border-width) var(--primary-color);
+    border-style: none dotted solid;
 }
 
 section {
@@ -181,33 +202,42 @@ section {
 
 /* COVER ART DISPLAY */
 .cover-display {
-    margin-top: var(--spacing-small);
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--spacing-small);
+    margin-top: var(--spacing-small);
 }
 
 .cover-card {
     min-width: 0;
 }
 
+.cover-card:hover {
+    cursor: pointer;
+}
+
+.cover-card:hover img {
+    transform: scale(1.05);
+}
+
 .cover-display figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-wrap: anywhere
+    overflow-wrap: anywhere;
 }
 
 .cover-display img {
-    display: block;
     width: 100%;
     max-width: 200px;
     aspect-ratio: 1 / 1.414;
     object-fit: cover;
+    border: var(--border-width) solid var(--border-color);
+    transition: transform 0.2s linear;
 }
 
 .cover-display figcaption {
     margin-top: var(--spacing-small);
     font-family: var(--title-font);
+    text-align: center;
 }

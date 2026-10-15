@@ -1,5 +1,5 @@
 
-import { dropdown } from "../data/dropdown.mjs";
+import { dropdown } from "../data/modules/dropdown.mjs";
 
 const ddNav = document.getElementById("dd-nav");
 const ddNavButton = ddNav.getElementsByClassName("dd-button")[0];
