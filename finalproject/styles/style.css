@@ -24,6 +24,16 @@
     padding: 0;
 }
 
+p a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+p a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
 ul,
 ol {
     list-style: none;
@@ -122,7 +132,7 @@ footer {
     background-color: var(--primary-color);
 }
 
-.dropout .dd-button {
+.dropout .dd-button, form button {
     padding: var(--spacing-small);
     text-align: left;
     cursor: pointer;
@@ -130,7 +140,7 @@ footer {
     border: var(--border-width) outset var(--border-color);
 }
 
-.dropout .dd-button:hover {
+.dropout .dd-button:hover, form button:hover {
     color: var(--background-color);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -248,7 +258,6 @@ section {
 
 #comic-modal[open] {
     position: fixed;
-    inset: 0;
     margin: auto;
 
     width: 90%;
@@ -256,15 +265,15 @@ section {
     max-height: 85vh;
     overflow-y: auto;
 
-    border: 1px solid var(--border);
-    border-radius: 2px;
-
-    background: var(--surface);
-    color: var(--text);
+    border: var(--border-width) solid var(--primary-color);
+    background: var(--primary-color) url('../images/bg.webp') repeat;
+    background-size: 40px 40px;
+    animation: body-bg-scroll 4s linear infinite;
 }
 
 #comic-modal::backdrop {
-    background: var(--background-color)
+    background: var(--secondary-color);
+    opacity: 0.5;
 }
 
 
@@ -282,15 +291,18 @@ section {
     text-align: center;
 }
 
+.modal-content p, .modal-content h2 {
+    background-color: var(--border-color);
+    color: var(--background-color);
+    padding: var(--spacing-medium)
+}
+
 
 .modal-content h2 {
     align-self: stretch;
 
     margin: -10px -10px 0;
     padding: 10px;
-
-    background: var(--primary);
-    color: var(--background);
 }
 
 
@@ -311,34 +323,50 @@ section {
 
 
 .modal-description {
-    text-align: left;
+    text-align: justify;
 }
 
 
 /* MODAL CLOSE BUTTON*/
 
 .modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-
-    border: none;
-    padding: 0 5px;
-
-    background: transparent;
-    color: var(--background);
-
-    font-size: 2rem;
-    line-height: 1;
-    cursor: pointer;
+    width: 100%;
+    padding: var(--spacing-small);
+    background-color: var(--border-color);
+    color: var(--background-color);
+    border: var(--primary-color) var(--border-width);
 }
 
 .modal-close:hover {
-    opacity: 0.7;
+    background-color: var(--primary-color);
 }
 
-.modal-close:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 3px;
+/* FORMS */
+form {
+    border: var(--primary-color) var(--border-width) dotted;
+    padding: var(--spacing-small);
+    margin: var(--spacing-medium) 0px;
+}
+
+fieldset {
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+    border: var(--primary-color) dotted var(--border-width);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--spacing-small);
+}
+
+legend {
+    font-family: var(--legal-font);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input {
+    display: inline-block;
+}
+
+form button {
+    width: 100%;
 }

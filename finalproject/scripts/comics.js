@@ -26,7 +26,7 @@ function createCard(item) {
         </a>
     `;
 
-    const trigger = card.querySelector(".card-trigger");
+    const trigger = card.getElementsByClassName("card-trigger")[0];
 
     trigger.addEventListener("click", (event) => {
         event.preventDefault();
@@ -63,7 +63,7 @@ function createModal() {
             type="button"
             aria-label="Close dialog"
         >
-            &times;
+        Exit
         </button>
 
         <div class="modal-content">
@@ -79,16 +79,12 @@ function createModal() {
     `;
 
     document.body.appendChild(dialog);
-
-    dialog.querySelector(".modal-close").addEventListener("click", () => {
-        dialog.close();
-    });
-
-    dialog.addEventListener("click", (event) => {
-        if (event.target === dialog) {
-            dialog.close();
-        }
-    });
+    
+    
+    dialog.getElementsByClassName("modal-close")[0].addEventListener("click", () =>
+    {
+        dialog.close()
+    })
 
     return dialog;
 }
@@ -98,19 +94,19 @@ function createModal() {
 const modal = createModal();
 
 function openModal(item) {
-    const cover = modal.querySelector(".modal-cover");
+    const cover = modal.getElementsByClassName("modal-cover")[0];
 
     cover.src = `./images/${item.imageUrl}`;
     cover.alt = `${item.name} cover`;
 
-    modal.querySelector(".modal-title").textContent = item.name;
-    modal.querySelector(".modal-description").textContent =
+    modal.getElementsByClassName("modal-title")[0].textContent = item.name;
+    modal.getElementsByClassName("modal-description")[0].textContent =
         item.description;
 
-    modal.querySelector(".modal-rating").textContent =
+    modal.getElementsByClassName("modal-rating")[0].textContent =
         `Rating: ${item.rating}/5`;
 
-    modal.querySelector(".modal-date").textContent =
+    modal.getElementsByClassName("modal-date")[0].textContent =
         `Added: ${item.dateAdded}`;
 
     modal.showModal();
