@@ -1,6 +1,7 @@
 @media screen and (min-width: 600px) {
     .dd-list {
         display: flex;
+        padding: 6px 0px 0px;
     }
 
     .dd-list a {
