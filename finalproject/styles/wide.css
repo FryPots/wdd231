@@ -1,0 +1,9 @@
+@media screen and (min-width: 600px) {
+    .dd-list {
+        display: flex;
+    }
+
+    .dd-list a {
+        border: none;
+    }
+}
